@@ -30,7 +30,7 @@ Aplikacija temelji na arhitekturi odjemalec-strežnik:
 
 * **Cloudflare Tunnel:** Omogoča varen zunanji dostop do aplikacije.
 
-## Načrtovane funkcionalnosti
+## Funkcionalnosti
 
 * Prikaz izdelkov in njihovih podrobnosti
 
@@ -61,7 +61,3 @@ web-shop/
 ## Namestitev in zagon
 
 Navodila za namestitev in zagon aplikacije bomo dodali med nadaljnjim razvojem projekta.
-
-## Ekipa
-
-Projekt je izdelan v okviru predmeta **Razvoj programske opreme** kot skupinski projekt.
