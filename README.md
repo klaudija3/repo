@@ -1,63 +1,65 @@
 # Spletna trgovina
 
-Spletna aplikacija za spletno trgovino, razvita v okviru predmeta **Razvoj programske opreme**.
+Cilj projekta je razvoj funkcionalne spletne trgovine, ki uporabnikom omogoča pregledovanje izdelkov, iskanje, upravljanje nakupovalne košarice in oddajo naročil. Aplikacija vključuje tudi administrativni del za upravljanje izdelkov, kategorij, uporabnikov in naročil.
 
-Projekt je osredotočen na razvoj funkcionalne spletne trgovine z uporabo sodobnih spletnih tehnologij in iterativnega pristopa k razvoju po metodologiji Scrum.
 
-## Uporabljene tehnologije
+## Načrtovane funkcionalnosti
 
-| Komponenta                                 | Tehnologija       | Opis                                                                         |
-| ------------------------------------------ | ----------------- | ---------------------------------------------------------------------------- |
-| Podatkovna baza                            | PostgreSQL        | Odprtokodna relacijska podatkovna baza                                       |
-| Zaledni del (Backend)                      | Python, Flask     | Lahek spletni ogrodni sistem za razvoj REST API-jev                          |
-| Uporabniški vmesnik (Frontend)             | Vue.js            | JavaScript ogrodje za razvoj odzivnih uporabniških vmesnikov                 |
-| Upravljanje različic                       | Git, GitHub       | Upravljanje izvorne kode in sodelovanje pri razvoju                          |
-| Upravljanje nalog                          | Jira              | Načrtovanje sprintov in spremljanje nalog                                    |
-| Povratni proxy / uravnoteženje obremenitve | Nginx             | Usmerjanje zahtevkov in posredovanje prometa med storitvami                  |
-| Zunanji dostop                             | Cloudflare Tunnel | Varna zunanja dostopnost aplikacije brez neposrednega odpiranja vhodnih vrat |
+### 1. Izdelki in kategorije
+- Prikaz vseh izdelkov.
+- Prikaz podrobnosti posameznega izdelka (naziv, opis, cena, slika, zaloga).
+- Razvrščanje izdelkov po kategorijah.
+- Iskanje izdelkov po nazivu.
+- Filtriranje izdelkov po kategoriji in ceni.
+- Razvrščanje izdelkov po ceni in nazivu.
 
-## Arhitektura
+### 2. Registracija in prijava (Login)
+- Registracija novih uporabnikov.
+- Prijava uporabnikov z e-poštnim naslovom in geslom.
+- Odjava uporabnikov.
+- Varno shranjevanje gesel.
+- Preverjanje pravilnosti prijavnih podatkov.
+- Upravljanje uporabniških sej.
+- Zaščita strani, ki zahtevajo prijavo.
+- Razlikovanje med običajnimi uporabniki in administratorji.
 
-Aplikacija temelji na arhitekturi odjemalec-strežnik:
+### 3. Uporabniški profil
+- Pregled uporabniškega profila.
+- Urejanje osebnih podatkov.
+- Spreminjanje gesla.
+- Pregled zgodovine naročil.
 
-* **Frontend:** Vue.js skrbi za uporabniški vmesnik in komunikacijo z zalednim delom prek zahtevkov REST API.
+### 4. Nakupovalna košarica
+- Dodajanje izdelkov v košarico.
+- Odstranjevanje izdelkov iz košarice.
+- Spreminjanje količine izdelkov.
+- Prikaz skupne vrednosti košarice.
+- Praznjenje nakupovalne košarice.
 
-* **Backend:** Flask zagotavlja REST API, obdeluje poslovno logiko, avtentikacijo in komunikacijo s podatkovno bazo.
+### 5. Naročila
+- Oddaja naročila.
+- Vnos podatkov za dostavo.
+- Izbira načina plačila.
+- Pregled in potrditev naročila.
+- Pregled zgodovine naročil.
+- Spremljanje statusa naročila.
 
-* **Podatkovna baza:** PostgreSQL shranjuje podatke o izdelkih, uporabnikih, nakupovalnih košaricah in naročilih.
+### 6. Administracija
+- Dodajanje, urejanje in brisanje izdelkov.
+- Upravljanje kategorij izdelkov.
+- Upravljanje zaloge izdelkov.
+- Pregled in upravljanje naročil.
+- Spreminjanje statusa naročil.
+- Pregled in upravljanje uporabnikov.
 
-* **Nginx:** Deluje kot povratni proxy in usmerja vhodne zahtevke do ustreznih storitev.
+### 7. Uporabniški vmesnik
+- Odziven prikaz na računalnikih, tablicah in mobilnih napravah.
+- Pregledna navigacija po spletni trgovini.
+- Obrazci za registracijo in prijavo.
+- Preverjanje pravilnosti vnesenih podatkov.
+- Prikaz obvestil in sporočil o napakah.
 
-* **Cloudflare Tunnel:** Omogoča varen zunanji dostop do aplikacije.
-
-## Funkcionalnosti
-
-* Prikaz izdelkov in njihovih podrobnosti
-
-* Iskanje, filtriranje in razvrščanje izdelkov
-
-* Registracija uporabnikov in prijava
-
-* Upravljanje nakupovalne košarice
-
-* Oddaja in upravljanje naročil
-
-* Shranjevanje podatkov v podatkovno bazo
-
-* Odziven uporabniški vmesnik
-
-## Struktura projekta
-
-```
-web-shop/
-├── backend/          # Flask REST API
-├── frontend/         # Vue.js aplikacija
-├── database/         # Skripte in inicializacija podatkovne baze
-├── nginx/            # Konfiguracija Nginx
-├── docs/             # Projektna dokumentacija
-└── README.md
-```
 
 ## Namestitev in zagon
 
-Navodila za namestitev in zagon aplikacije bomo dodali med nadaljnjim razvojem projekta.
+Navodila za namestitev, konfiguracijo in zagon aplikacije bodo dodana med nadaljnjim razvojem projekta.
