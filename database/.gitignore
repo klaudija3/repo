@@ -1,0 +1,38 @@
+# Database files
+*.sql
+*.dump
+*.backup
+postgresql/data/
+postgresql/log/
+
+# Environment files
+.env
+.env.local
+.env.*.local
+*.env
+# .env.example is committed as template
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+logs/
+
+# Temporary files
+*.tmp
+*.temp
